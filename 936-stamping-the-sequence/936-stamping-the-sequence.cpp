@@ -38,8 +38,7 @@ public:
                 cnt++;
             }
         }
-
-        
+ 
         for(int i = 0; i < s.size(); i++) {
             if(f[i] == t.size()) {
                 q.push(i);
@@ -47,9 +46,6 @@ public:
                 i = i + (t.size() - 1);
             }
         }
-        
-        //cout << s << endl;
-        
         
         while(q.size() > 0) {
             int sz = q.size();
